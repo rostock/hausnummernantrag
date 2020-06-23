@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="https://hausnummer.leichtwind.de/favicon.ico">
-    <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet"  href="lib/mvp-ol-geocoder/dist/ol-geocoder.css">
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet"  href="lib/jquery-ui-1.12.1.custom/jquery-ui.css">
     <link rel="stylesheet" href="css/custom.css">
     
@@ -396,12 +395,13 @@
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jquery-3.5.1/jquery-3.5.1.min.js"></script>
     <script src="lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-    <script src="lib/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    
+    <script src="lib/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
     <script src="lib/ol/ol.js"></script>
-    <script src="lib/mvp-ol-geocoder/dist/ol-geocoder.js"></script>
+    <script src="https://unpkg.com/ol-rotate-feature@latest/dist/bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/map.js"></script>
     
