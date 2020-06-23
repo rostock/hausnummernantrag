@@ -1,0 +1,4 @@
+vendor/*
+lib/*
+conf/config.inc.php
+conf/templates.secure.inc.php
