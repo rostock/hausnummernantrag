@@ -97,7 +97,7 @@
                     <option value="Firma">Firma</option>
                   </select>
                 </div>
-				<div class="col-md-10 mb-3" id="firmaSet" style="display:none">
+		<div class="col-md-10 mb-3" id="firmaSet" style="display:none">
                   <label for="firma">Firma</label>
                   <input type="text" class="form-control" name="firma" id="firma" placeholder="" value="" required="true" data-cip-id="firma">
                   <div class="invalid-feedback">
@@ -119,7 +119,7 @@
                   </div>
                 </div>
               </div>
-			  <div class="mb-3">
+		<div class="mb-3">
                 <label for="phone">Telefonnummer</label>
                 <input type="phone" class="form-control" name="phone" id="phone" placeholder="+49381381123456" data-cip-id="phone">
                 <div class="invalid-feedback">
@@ -221,46 +221,82 @@
                   Flurstückssuche, bitte wählen Sie über das Autocomplete das gewünschte Flurstück aus.
                 </div>
               </div>
-			  <div  class="mb-3">	
-				<div class="btn-group" role="group">
-  				  <button type="button" value="square" class="btn btn-secondary polygonType">Quadratisch</button>
-  				  <button type="button" value="rectangle" class="btn btn-secondary polygonType">Rechteckig</button>
-  				  <button type="button" value="lForm" class="btn btn-secondary polygonType">L-Form</button>
-				  <button type="button" value="uForm" class="btn btn-secondary polygonType">U-Form</button>
-			    </div>
-			  </div>
-			  <div class="row square formConfig" style="display:none">
-				  <div class="input-group mb-3">
-  					<div class="input-group-prepend">
-    					<span class="input-group-text">A</span>
-  					</div>
-  					<input type="number" class="form-control squareInput" id="squareInputA">
-  					<div class="input-group-append">
-    					<span class="input-group-text">cm</span>
-  					</div>
-				 </div>	  
-			  </div>
-			  <div class="row rectangle formConfig" style="display:none">
-				  <div class="input-group mb-3">
-  					<div class="input-group-prepend">
-    					<span class="input-group-text">A</span>
-  					</div>
-  					<input type="number" class="form-control rectangleInput" id="rectangleInputA">
-  					<div class="input-group-append">
-    					<span class="input-group-text">cm</span>
-  					</div>
-				 </div>	 
-				  <div class="input-group mb-3">
-  					<div class="input-group-prepend">
-    					<span class="input-group-text">B</span>
-  					</div>
-  					<input type="number" class="form-control rectangleInput" id="rectangleInputB">
-  					<div class="input-group-append">
-    					<span class="input-group-text">cm</span>
-  					</div>
-				 </div>	  
-			  </div>
-			  <div class="row lForm formConfig" style="display:none">
+                <div  class="mb-3">	
+                      <div class="btn-group" role="group">
+                        <button type="button" value="square" class="btn btn-secondary polygonType">
+                            <span class="glyphicon glyphicon-align-left span_formimages squareOption" aria-hidden="true">
+                                &nbsp;
+                            </span>
+                            Quadratisch
+                        </button>
+                        <button type="button" value="rectangle" class="btn btn-secondary polygonType">
+                            <span class="glyphicon glyphicon-align-left span_formimages rectangleOption" aria-hidden="true">
+                                &nbsp;
+                            </span>
+                            Rechteckig
+                        </button>
+                        <button type="button" value="lForm" class="btn btn-secondary polygonType">
+                            <span class="glyphicon glyphicon-align-left span_formimages lFormOption" aria-hidden="true">
+                                &nbsp;</span>
+                            <span class="glyphicon glyphicon-align-left span_formimages lFormOption2" aria-hidden="true">
+                                &nbsp;</span>
+                            L-Form
+                        </button>
+                        <button type="button" value="uForm" class="btn btn-secondary polygonType">
+                            <span class="glyphicon glyphicon-align-left span_formimages uFormOption" aria-hidden="true">
+                                &nbsp;</span>
+                            <span class="glyphicon glyphicon-align-left span_formimages uFormOption2" aria-hidden="true">
+                                &nbsp;</span>
+                            <span class="glyphicon glyphicon-align-left span_formimages uFormOption3" aria-hidden="true">
+                                &nbsp;</span>
+                            U-Form
+                        </button>
+                  </div>
+                </div>
+                    <div class="row square formConfig" style="display:none">
+                      <div class="col-md-6">
+                          <div class="form-group input-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">A</span>
+                            </div>
+                            <input type="number" class="form-control squareInput" id="squareInputA">
+                            <div class="input-group-append">
+                                <span class="input-group-text">cm</span>
+                            </div>
+                          </div>
+                       </div>	  
+                       <div class="col-md-6">
+                           <img class="formimages glyphicon glyphicon-align-left" src="img/full_square.png">
+                       </div>	   
+                    </div>
+                
+                    <div class="row rectangle formConfig" style="display:none">
+                        <div class="col-md-6">
+                            <div class="form-group input-group">
+                                  <div class="input-group-prepend">
+                                  <span class="input-group-text">A</span>
+                                  </div>
+                                  <input type="number" class="form-control rectangleInput" id="rectangleInputA">
+                                  <div class="input-group-append">
+                                  <span class="input-group-text">cm</span>
+                                  </div>
+                           </div>	 
+                            <div class="input-group">
+                                  <div class="input-group-prepend">
+                                  <span class="input-group-text">B</span>
+                                  </div>
+                                  <input type="number" class="form-control rectangleInput" id="rectangleInputB">
+                                  <div class="input-group-append">
+                                  <span class="input-group-text">cm</span>
+                                  </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="formimages glyphicon glyphicon-align-left" src="img/full_rectangle.png">
+                       </div>	
+                    </div>
+			<div class="row lForm formConfig" style="display:none">
+                            <div class="col-md-6">  
 				  <div class="input-group mb-3">
   					<div class="input-group-prepend">
     					<span class="input-group-text">A</span>
@@ -296,45 +332,72 @@
   					<div class="input-group-append">
     					<span class="input-group-text">cm</span>
   					</div>
-				 </div>	  
+				 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="formimages glyphicon glyphicon-align-left" src="img/full_lform.png">
+                            </div>
 			  </div>
 			  <div class="row uForm formConfig" style="display:none">
-				  <div class="input-group mb-3">
-  					<div class="input-group-prepend">
-    					<span class="input-group-text">A</span>
-  					</div>
-  					<input type="text" class="form-control">
-  					<div class="input-group-append">
-    					<span class="input-group-text">cm</span>
-  					</div>
-				 </div>
-				 <div class="input-group mb-3">
-  					<div class="input-group-prepend">
-    					<span class="input-group-text">B</span>
-  					</div>
-  					<input type="text" class="form-control">
-  					<div class="input-group-append">
-    					<span class="input-group-text">cm</span>
-  					</div>
-				 </div>
-				 <div class="input-group mb-3">
-  					<div class="input-group-prepend">
-    					<span class="input-group-text">C</span>
-  					</div>
-  					<input type="text" class="form-control">
-  					<div class="input-group-append">
-    					<span class="input-group-text">cm</span>
-  					</div>
-				 </div>
-				 <div class="input-group mb-3">
-  					<div class="input-group-prepend">
-    					<span class="input-group-text">D</span>
-  					</div>
-  					<input type="text" class="form-control">
-  					<div class="input-group-append">
-    					<span class="input-group-text">cm</span>
-  					</div>
-				 </div>	
+                            <div class="col-md-6 ">  
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">A</span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">cm</span>
+                                    </div>
+                                </div>
+				<div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">B</span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">cm</span>
+                                    </div>
+				</div>
+				<div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">C</span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">cm</span>
+                                    </div>
+				</div>
+				<div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">D</span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">cm</span>
+                                    </div>
+				</div>	
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">E</span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">cm</span>
+                                    </div>
+				</div>	
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">F</span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">cm</span>
+                                    </div>
+				</div>	
+                            </div>
+                            <div class="col-md-6">
+                                <img class="formimages glyphicon glyphicon-align-left" src="img/full_uform.png">
+                            </div>
 			  </div>	
               <label for="mapSurface">Gebäudegrundriss</label>  
               <div id="mapSurface" class="map"></div>
@@ -401,9 +464,13 @@
     
     <script src="lib/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
     <script src="lib/ol/ol.js"></script>
-    <script src="https://unpkg.com/ol-rotate-feature@latest/dist/bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/format.map.js"></script>
+    <script src="js/view.map.js"></script>
+    <script src="js/style.map.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/mapSurface.map.js"></script>
+    <script src="js/mapEntry.map.js"></script>
     
     <link rel="stylesheet" href="lib/ol/ol.css">
     <link rel="stylesheet" href="css/map.css">
