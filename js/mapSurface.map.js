@@ -21,9 +21,6 @@ drawBuildingSurface.on('drawend', function (evt) {
 });
 
 
-
-
-
 var mapSurface = new ol.Map({
   layers: [
     new ol.layer.Tile({
