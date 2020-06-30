@@ -33,6 +33,8 @@ var buildingEntryLayer = new ol.layer.Vector({
 });
 
 
+
+
 (function() {
   var evt = new $.Event('styleChanging'),
   orig = $.fn.css;
