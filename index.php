@@ -35,7 +35,7 @@
           <ul class="pagination pagination-lg justify-content-center">
             <li class="breadcrumbs page-item page-item-breadcrumb active" formPageId="start" data-toggle="tooltip" title="Anliegen definieren"><a class="page-link" href="#">1</a></li>
             <li class="breadcrumbs page-item page-item-breadcrumb" formPageId="personalMetadata" data-toggle="tooltip" title="persönliche Informationen"><a class="page-link" href="#">2</a></li>
-             <li class="breadcrumbs page-item page-item-breadcrumb" formPageId="houseSurface" data-toggle="tooltip" title="Angabe der neuen Gegebenheiten"><a class="page-link" href="#">3</a></li>
+            <li class="breadcrumbs page-item page-item-breadcrumb" formPageId="houseSurface" data-toggle="tooltip" title="Angabe der neuen Gegebenheiten"><a class="page-link" href="#">3</a></li>
             <li class="breadcrumbs page-item page-item-breadcrumb" formPageId="extras" data-toggle="tooltip" title="Bemerkungen und Dateien anfügen"><a class="page-link" href="#">4</a></li>
           </ul>
         </nav>

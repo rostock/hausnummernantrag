@@ -4,3 +4,6 @@ conf/config.inc.php
 conf/templates.secure.inc.php
 /nbproject/private/
 /nbproject/*
+nbproject/*
+node_modules/*
+cypress/*
