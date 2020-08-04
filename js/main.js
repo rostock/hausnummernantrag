@@ -83,14 +83,12 @@ $('.btnPrevious').click(function(){
   
   var listBreadcrumbs = $( ".breadcrumbs" );
   var breadCrumbElement = listBreadcrumbs.get(index - 1);
-  console.log()
   $(breadCrumbElement).addClass('active');
   
   var listItems = $( ".formcontainer" );
   var ele = listItems.get(index - 1);
   $(ele).css('display','');
   $(this).closest('.formcontainer').css('display','none');
-  //$(this).removeClass('active');
 })
 
 $('.page-item-breadcrumb').click(function(){
@@ -103,12 +101,12 @@ $('.page-item-breadcrumb').click(function(){
   $(id).css('display','');
 })
 
-
-/*
- * add a Tooltip to the elements.
- */
-
-// $('[data-toggle="tooltip"]').tooltip(
-//        {container:'body', trigger: 'hover', placement:"bottom"}
-//        );  
-//  
+$('#requestFor_02').change(function(){
+  $('#reihenhausGeomOptions, #doppelhausGeomOptions').css('display','none');
+  if($(this).val() === 'Doppelhaus') {
+    $('#doppelhausGeomOptions').css('display','');
+  }
+  if($(this).val() === 'Reihenhaus'){
+    $('#reihenhausGeomOptions').css('display','');
+  }
+}); 

@@ -66,7 +66,8 @@
                   <label for="requestFor_02">Antrag für:</label>
                   <select class="form-control" name="typeOfBuilding" id="requestFor_02">
                     <option value="Einfamilienhaus">Einfamilienhaus</option>
-                    <option value="Doppelhaushälfte">Doppelhaushälfte</option>
+                    <option value="Doppelhaus">Doppelhaus</option>
+                    <option value="Reihenhaus">Reihenhaus</option>
                     <option value="Mehrfamilienhaus">Mehrfamilienhaus</option>
                     <option value="Gebäudekomplex">Gebäudekomplex</option>
                     <option value="Industrieanlage">Industrieanlage</option>
@@ -221,6 +222,40 @@
                   Flurstückssuche, bitte wählen Sie über das Autocomplete das gewünschte Flurstück aus.
                 </div>
               </div>
+                <div  class="mb-3" id="doppelhausGeomOptions" style="display:none">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="doppelhausGeomOptionsCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Antrag für beide Eingänge
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="doppelhausGeomOptionsCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Grundriss ist gespiegelt
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="doppelhausGeomOptionsCheck3">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Gebäudeeingang ist gespiegelt
+                        </label>
+                    </div>
+                </div>
+                <div  class="mb-3" id="reihenhausGeomOptions" style="display:none">
+                    <div class="form-check">
+                        <input class="form-check-input" name="reihenhausGeomOptions" type="radio" value="" id="defaultRadio1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            nur ein Eingang
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="reihenhausGeomOptions" type="radio" value="" id="defaultRadio2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Anzahl an Eingängen
+                        </label>
+                    </div>
+                </div>
                 <div  class="mb-3">	
                       <div class="btn-group" role="group">
                         <button type="button" value="square" class="btn btn-secondary polygonType">
@@ -239,16 +274,20 @@
                             <span class="glyphicon glyphicon-align-left span_formimages lFormOption" aria-hidden="true">
                                 &nbsp;</span>
                             <span class="glyphicon glyphicon-align-left span_formimages lFormOption2" aria-hidden="true">
-                                &nbsp;</span>
+                                &nbsp;
+                            </span>
                             L-Form
                         </button>
                         <button type="button" value="uForm" class="btn btn-secondary polygonType">
                             <span class="glyphicon glyphicon-align-left span_formimages uFormOption" aria-hidden="true">
-                                &nbsp;</span>
+                                &nbsp;
+                            </span>
                             <span class="glyphicon glyphicon-align-left span_formimages uFormOption2" aria-hidden="true">
-                                &nbsp;</span>
+                                &nbsp;
+                            </span>
                             <span class="glyphicon glyphicon-align-left span_formimages uFormOption3" aria-hidden="true">
-                                &nbsp;</span>
+                                &nbsp;
+                            </span>
                             U-Form
                         </button>
                   </div>
@@ -344,7 +383,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">A</span>
                                     </div>
-                                    <input type="text" class="form-control">
+                                    <input type="number" class="form-control uFormInput" id="uFormInputA">
                                     <div class="input-group-append">
                                         <span class="input-group-text">cm</span>
                                     </div>
@@ -353,7 +392,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">B</span>
                                     </div>
-                                    <input type="text" class="form-control">
+                                    <input type="number" class="form-control uFormInput" id="uFormInputB">
                                     <div class="input-group-append">
                                         <span class="input-group-text">cm</span>
                                     </div>
@@ -362,7 +401,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">C</span>
                                     </div>
-                                    <input type="text" class="form-control">
+                                    <input type="number" class="form-control uFormInput" id="uFormInputC">
                                     <div class="input-group-append">
                                         <span class="input-group-text">cm</span>
                                     </div>
@@ -371,7 +410,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">D</span>
                                     </div>
-                                    <input type="text" class="form-control">
+                                    <input type="number" class="form-control uFormInput" id="uFormInputD">
                                     <div class="input-group-append">
                                         <span class="input-group-text">cm</span>
                                     </div>
@@ -380,7 +419,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">E</span>
                                     </div>
-                                    <input type="text" class="form-control">
+                                    <input type="number" class="form-control uFormInput" id="uFormInputE">
                                     <div class="input-group-append">
                                         <span class="input-group-text">cm</span>
                                     </div>
@@ -389,7 +428,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">F</span>
                                     </div>
-                                    <input type="text" class="form-control">
+                                    <input type="number" class="form-control uFormInput" id="uFormInputF">
                                     <div class="input-group-append">
                                         <span class="input-group-text">cm</span>
                                     </div>

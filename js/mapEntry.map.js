@@ -2,13 +2,15 @@ var modifyBuildingEntry = new ol.interaction.Modify({source: buildingEntrySource
 var snapBuildingEntry = new ol.interaction.Snap({source: buildingSurfaceSource});
 
 var snapCondition = function(evt){
+  console.log("snapCondition");
   var features = [];
   mapEntry.forEachFeatureAtPixel(evt.pixel, function(feature, layer) {
     if(layer != null && layer.get('name') === 'Gebäudegrundriss') {
       features.push(feature);
     }
   });
-  
+  console.log(features.length);
+  console.log(features);
   if(features.length  === 1 ) {
     return checkBoundary(features[0], evt.coordinate);
   } else {
